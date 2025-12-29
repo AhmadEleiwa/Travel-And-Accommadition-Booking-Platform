@@ -1,5 +1,7 @@
+import type { City } from "./features/cities";
+import type { Hotel, Room } from "./features/hotels";
 
-import { City, Hotel, Room, UserRole } from "./types/global";
+
 
 export const MOCK_CITIES: City[] = [
   { id: 'c1', name: 'Paris', country: 'France', postOffice: '75000', thumbnail: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=400&q=80', visitCount: 1500, createdAt: '2023-01-01', updatedAt: '2023-01-01' },
