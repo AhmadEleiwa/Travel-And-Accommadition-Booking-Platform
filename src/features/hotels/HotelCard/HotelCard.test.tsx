@@ -6,8 +6,8 @@ import "@testing-library/jest-dom";
 
 import userEvent from '@testing-library/user-event';
 import { Routes, Route } from "react-router-dom";
-import { render } from "../../test/render";
-import { MOCK_HOTELS } from "../../constants";
+import { render } from "../../../test/render";
+import { MOCK_HOTELS } from "../../../constants";
 
 describe("HotelCard", () => {
   it("check default variant", () => {

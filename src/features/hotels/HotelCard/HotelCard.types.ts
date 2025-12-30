@@ -1,7 +1,6 @@
-import type { Hotel } from "../../features/hotels";
+import type { Hotel } from "..";
 
-
-type HotelCardVariant = 'compact' | 'featured' | 'list';
+export type HotelCardVariant = "compact" | "featured" | "list";
 
 export default interface HotelCardProps {
   hotel: Hotel;
