@@ -1,5 +1,4 @@
-import { describe } from "node:test";
-import { expect } from "vitest";
+import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";
 import HotelCard from "./HotelCard";
 
