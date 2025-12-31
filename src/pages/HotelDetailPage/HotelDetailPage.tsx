@@ -1,5 +1,6 @@
 const HotelDetailPage = () => {
-  return <main></main>;
+  
+  return <main>Hotel Details</main>;
 };
 
 export default HotelDetailPage;
