@@ -1,4 +1,4 @@
 const ConfirmationPage = () => {
-  return <main></main>;
+  return <main>confirmation</main>;
 };
 export default ConfirmationPage;

@@ -1,4 +1,4 @@
 const UnauthorizedPage = () => {
-  return <main></main>;
+  return <main>unauthorized</main>;
 };
 export default UnauthorizedPage;
