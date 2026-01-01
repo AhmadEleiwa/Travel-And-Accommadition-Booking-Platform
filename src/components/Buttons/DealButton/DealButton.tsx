@@ -1,6 +1,6 @@
 import { Button, type ButtonProps } from "@mui/material";
 
-const DealButton: React.FC<ButtonProps> = ({ ...props }) => {
+export const DealButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
     <Button
       {...props}
@@ -20,4 +20,3 @@ const DealButton: React.FC<ButtonProps> = ({ ...props }) => {
     </Button>
   );
 };
-export default DealButton
