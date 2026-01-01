@@ -6,6 +6,7 @@ import { AppRouter } from "./routes/router";
 import Navbar from "./layouts/Navbar/Navbar";
 import type { User } from "./features/auth";
 import { useState } from "react";
+import SearchBar from "./features/search/SearchBar";
 
 export default function App() {
   const [mockUser,setMockUser] = useState<User | null>({email:'ahmad@gmail.com', role:'USER', username:"ss", id:'s' })
@@ -13,6 +14,7 @@ export default function App() {
     // <h1>sdsd</h1>
     <BrowserRouter>
       <Navbar user={mockUser} onLogout={()=>{setMockUser(null)}} />
+        <SearchBar initialQuery="Japan" />
       <AppRouter />
     </BrowserRouter>
   );
