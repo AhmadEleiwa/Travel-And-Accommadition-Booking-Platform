@@ -4,7 +4,7 @@ import { Box, Button, Stack, Typography, Menu } from "@mui/material";
 import type { GuestPickerProps, GuestType } from "./GuestPicker.type";
 import {DealButton} from "../Buttons";
 
-export const GuestPicker: React.FC<GuestPickerProps> = ({ guests, setGuests, ...props }) => {
+export const GuestPicker: React.FC<GuestPickerProps> = ({ guests, setGuests }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleOpen = (e: React.MouseEvent<HTMLButtonElement>) =>
