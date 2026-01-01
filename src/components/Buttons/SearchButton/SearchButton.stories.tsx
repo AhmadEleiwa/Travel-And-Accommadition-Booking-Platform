@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import DealButton from "./DealButton";
 import { Box, Container, type ButtonProps } from "@mui/material";
+import { SearchButton } from "./SearchButton";
 
 const meta = {
-  title: "Components/DealButton",
-  component: DealButton,
+  title: "Components/Buttons/SearchButton",
+  component: SearchButton,
   parameters: {
     layout: "center",
   },
@@ -19,7 +19,6 @@ const meta = {
     ),
   ],
   args: {
-    children: "Deal",
   },
 } satisfies Meta<ButtonProps>;
 export default meta;
