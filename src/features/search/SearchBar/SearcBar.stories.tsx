@@ -15,7 +15,7 @@ const meta = {
     (Story) => (
       <BrowserRouter>
         {/* <Container sx={{ width: "100%", margin: "10px" }}> */}
-          <Story />
+        <Story />
         {/* </Container> */}
       </BrowserRouter>
     ),

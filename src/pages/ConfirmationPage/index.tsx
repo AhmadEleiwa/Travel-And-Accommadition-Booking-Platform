@@ -1,2 +1,2 @@
 import ConfirmationPage from "./ConfirmationPage";
-export default ConfirmationPage
+export default ConfirmationPage;

@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { MapPin, Star } from "lucide-react";
 
-import {DealButton} from "../../../../components/Buttons";
+import { DealButton } from "../../../../components/Buttons";
 type FeaturedProps = Pick<HotelCardProps, "hotel" | "showSaleBadge">;
 const Featured: React.FC<FeaturedProps> = ({ hotel, showSaleBadge }) => {
   return (

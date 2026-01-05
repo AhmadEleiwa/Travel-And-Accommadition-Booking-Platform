@@ -27,7 +27,7 @@ export const LoginPage = () => {
         enqueueSnackbar({
           message: "You hvae been login successfully",
           severity: "success",
-        })
+        }),
       );
     } catch (e) {
       if (e instanceof Error) {
@@ -36,7 +36,7 @@ export const LoginPage = () => {
           enqueueSnackbar({
             message: e.message,
             severity: "error",
-          })
+          }),
         );
       }
     }

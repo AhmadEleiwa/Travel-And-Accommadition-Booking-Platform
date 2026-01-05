@@ -8,7 +8,7 @@ export const AuthRoutes: RouteObject[] = [
     element: <LoginPage />,
   },
   {
-    path:'/signup',
-    element: <SignUpPage />
-  }
+    path: "/signup",
+    element: <SignUpPage />,
+  },
 ];

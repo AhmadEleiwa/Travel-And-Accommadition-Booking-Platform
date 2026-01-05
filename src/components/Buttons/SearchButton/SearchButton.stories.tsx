@@ -12,14 +12,19 @@ const meta = {
   decorators: [
     (Story) => (
       <Container sx={{ width: "100%" }}>
-        <Box display={'flex'} width={'100%'} height={'100%'} justifyContent={"center"} alignItems={"center"}>
+        <Box
+          display={"flex"}
+          width={"100%"}
+          height={"100%"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
           <Story />
         </Box>
       </Container>
     ),
   ],
-  args: {
-  },
+  args: {},
 } satisfies Meta<ButtonProps>;
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -8,14 +8,15 @@ import store from "../store";
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        {children}
-      </BrowserRouter>
+      <BrowserRouter>{children}</BrowserRouter>
     </Provider>
   );
 };
 
-const customRender = (ui: React.ReactElement, options?: Omit<RenderOptions, 'wrapper'>) => {
+const customRender = (
+  ui: React.ReactElement,
+  options?: Omit<RenderOptions, "wrapper">,
+) => {
   return render(ui, { wrapper: AllTheProviders, ...options });
 };
 

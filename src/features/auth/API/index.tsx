@@ -1,2 +1,2 @@
-export * from './authAPI'
-export * from './authAPI.type'
+export * from "./authAPI";
+export * from "./authAPI.type";

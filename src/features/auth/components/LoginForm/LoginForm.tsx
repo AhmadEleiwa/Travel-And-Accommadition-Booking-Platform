@@ -18,7 +18,7 @@ import { useAppSelector } from "../../../../store";
 import { validationSchema } from "./loginFormSchema";
 
 export const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
-  const error = useAppSelector(state => state.auth.error)
+  const error = useAppSelector((state) => state.auth.error);
   const initialValues: LoginFormValues = {
     username: "",
     password: "",
@@ -27,10 +27,10 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
 
   const handleSubmit = async (
     values: LoginFormValues,
-    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
+    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void },
   ) => {
     setSubmitting(true);
-    let user: AuthLoginRequest = values
+    let user: AuthLoginRequest = values;
     onLogin(user);
 
     setSubmitting(false);
@@ -132,9 +132,9 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
               "Sign In"
             )}
           </Button>
-          {error &&<Typography sx={{marginTop:2, color:'red'}}>
-            {error}
-          </Typography>}
+          {error && (
+            <Typography sx={{ marginTop: 2, color: "red" }}>{error}</Typography>
+          )}
         </Form>
       )}
     </Formik>

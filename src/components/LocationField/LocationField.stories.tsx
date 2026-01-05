@@ -26,9 +26,8 @@ const meta = {
     ),
   ],
   args: {
-    query:"Japan",
-    setQuery:()=>{}
-
+    query: "Japan",
+    setQuery: () => {},
   },
 } satisfies Meta<LocationFieldProps>;
 

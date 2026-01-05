@@ -12,5 +12,5 @@ export interface AuthSignupResponse extends AuthLoginResponse {}
 export interface AuthSignupPayload {
   username: string;
   email: string;
-  password:string;
+  password: string;
 }

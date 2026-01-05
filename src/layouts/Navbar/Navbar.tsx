@@ -3,9 +3,7 @@ import { AppBar, Toolbar, Box, Typography, Button } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import type NavbarProps from "./Navbar.type";
 
-
 const Navbar: React.FC<NavbarProps> = ({ onLogout, user }) => {
-
   const navigate = useNavigate();
 
   return (
@@ -149,7 +147,6 @@ const Navbar: React.FC<NavbarProps> = ({ onLogout, user }) => {
                 <Box
                   component={Link}
                   to="/admin"
-                  
                   sx={{
                     fontSize: "0.875rem",
                     fontWeight: 500,

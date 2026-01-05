@@ -10,7 +10,7 @@ import type { SignupFormValues } from "./SignupForm.type";
 /* Helpers */
 /* ------------------------------------------------------------------ */
 const renderSignupForm = (
-  onSignup: (values: SignupFormValues) => void = () => {}
+  onSignup: (values: SignupFormValues) => void = () => {},
 ) => {
   return render(<SignupForm onSignup={onSignup} />);
 };
@@ -76,7 +76,7 @@ describe("components/SignupForm", () => {
       await userEvent.click(getters.submitButton());
 
       expect(
-        await screen.findByText(/passwords must match/i)
+        await screen.findByText(/passwords must match/i),
       ).toBeInTheDocument();
     });
   });

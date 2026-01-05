@@ -22,7 +22,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
 
   const handleSubmit = async (
     values: SignupFormValues,
-    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
+    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void },
   ) => {
     setSubmitting(true);
     onSignup(values);

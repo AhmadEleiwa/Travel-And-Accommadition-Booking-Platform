@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../../store';
-import { removeSnackbar } from './snackbarSlice';
+import { useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../../store";
+import { removeSnackbar } from "./snackbarSlice";
 
 export const useSnackbarTimers = () => {
   const dispatch = useAppDispatch();

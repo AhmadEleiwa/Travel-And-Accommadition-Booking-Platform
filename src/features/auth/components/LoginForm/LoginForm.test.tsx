@@ -1,13 +1,11 @@
 import { describe, it, expect } from "vitest";
-import {screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 
 import { LoginForm } from "./LoginForm";
 import { render } from "../../../../test/render";
-const renderLoginForm = (
-  onLogin: (values: any) => void = () => {}
-) => {
+const renderLoginForm = (onLogin: (values: any) => void = () => {}) => {
   return render(<LoginForm onLogin={onLogin} />);
 };
 
@@ -15,8 +13,7 @@ const getters = {
   usernameInput: () => screen.getByLabelText("Username"),
   passwordInput: () => screen.getByLabelText("Password"),
   rememberCheckbox: () => screen.getByLabelText("Remember me"),
-  submitButton: () =>
-    screen.getByRole("button", { name: /sign in/i }),
+  submitButton: () => screen.getByRole("button", { name: /sign in/i }),
 };
 
 describe("components/LoginForm", () => {

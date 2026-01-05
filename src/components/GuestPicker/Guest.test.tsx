@@ -1,9 +1,9 @@
 import { describe, it, expect, vi } from "vitest";
-import {screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { GuestPicker } from "./GuestPicker";
 import type { GuestType } from "./GuestPicker.type";
-import {render} from '../../test/render'
+import { render } from "../../test/render";
 import "@testing-library/jest-dom";
 
 const defaultGuests: GuestType = { adults: 2, children: 1, rooms: 1 };
@@ -76,7 +76,11 @@ describe("components/GuestPicker", () => {
       await user.click(getters.guestButton());
       await user.click(getters.adultDecrement());
 
-      expect(setGuests).toHaveBeenCalledWith({ adults: 0, children: 0, rooms: 0 });
+      expect(setGuests).toHaveBeenCalledWith({
+        adults: 0,
+        children: 0,
+        rooms: 0,
+      });
     });
   });
 });

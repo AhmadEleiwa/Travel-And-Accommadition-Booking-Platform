@@ -1,1 +1,1 @@
-export * from './hotel.types'
+export * from "./hotel.types";

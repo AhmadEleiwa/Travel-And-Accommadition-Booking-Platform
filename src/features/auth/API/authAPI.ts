@@ -1,4 +1,9 @@
-import type { AuthLoginPayload, AuthLoginResponse, AuthSignupPayload, AuthSignupResponse } from "./authAPI.type";
+import type {
+  AuthLoginPayload,
+  AuthLoginResponse,
+  AuthSignupPayload,
+  AuthSignupResponse,
+} from "./authAPI.type";
 
 const MOCK_USER = {
   id: "12345",
@@ -12,10 +17,8 @@ const MOCK_USER = {
 export const loginAPI = (req: AuthLoginPayload): Promise<AuthLoginResponse> => {
   // 1. Return a new Promise to simulate the async nature of a network call
   return new Promise((resolve, reject) => {
-    
     // 2. Simulate a 1-second network delay
     setTimeout(() => {
-      
       // 3. Logic for validation
       if (req.username !== MOCK_USER.username) {
         return reject(new Error("Invalid username"));
@@ -36,16 +39,16 @@ export const loginAPI = (req: AuthLoginPayload): Promise<AuthLoginResponse> => {
       };
 
       resolve(res);
-    }, 2000); 
+    }, 2000);
   });
 };
-export const signUpAPI = (req: AuthSignupPayload): Promise<AuthSignupResponse> => {
+export const signUpAPI = (
+  req: AuthSignupPayload,
+): Promise<AuthSignupResponse> => {
   // 1. Return a new Promise to simulate the async nature of a network call
   return new Promise((resolve, reject) => {
-    
     // 2. Simulate a 1-second network delay
     setTimeout(() => {
-      
       // 3. Logic for validation
       if (req.username !== MOCK_USER.username) {
         return reject(new Error("Invalid username"));
@@ -66,6 +69,6 @@ export const signUpAPI = (req: AuthSignupPayload): Promise<AuthSignupResponse> =
       };
 
       resolve(res);
-    }, 2000); 
+    }, 2000);
   });
 };

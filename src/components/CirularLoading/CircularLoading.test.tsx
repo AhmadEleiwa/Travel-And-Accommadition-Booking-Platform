@@ -37,7 +37,7 @@ describe("components/CircularLoading", () => {
       render(
         <div data-testid="circular-loading-overlay">
           <CircularLoading loading />
-        </div>
+        </div>,
       );
 
       expect(getters.progress()).toBeInTheDocument();

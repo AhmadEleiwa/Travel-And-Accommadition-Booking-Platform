@@ -1,2 +1,2 @@
 import CitiesPage from "./CitiesPage";
-export default CitiesPage
+export default CitiesPage;
