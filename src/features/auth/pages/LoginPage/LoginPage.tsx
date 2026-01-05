@@ -22,7 +22,7 @@ export const LoginPage = () => {
       const { accessToken, ...userRes } = await loginAPI(user);
       dispatch(loginSuccess(userRes));
       setAccessToken(accessToken);
-      // navigate("/");
+      navigate("/");
       dispatch(
         enqueueSnackbar({
           message: "You hvae been login successfully",
