@@ -1,21 +1,21 @@
-import React from 'react';
-import { Calendar } from 'lucide-react';
-import {
-  Box,
-  TextField,
-  Typography,
-} from '@mui/material';
-import type { DateFieldProps } from './DateField.type';
+import React from "react";
+import { Calendar } from "lucide-react";
+import { Box, TextField, Typography } from "@mui/material";
+import type { DateFieldProps } from "./DateField.type";
 
-export const DateField: React.FC<DateFieldProps> = ({ label, value, setValue , ...props}) => (
+export const DateField: React.FC<DateFieldProps> = ({
+  label,
+  value,
+  setValue,
+  ...props
+}) => (
   <Box
-  
     sx={{
-      display: 'flex',
-      alignItems: 'center',
+      display: "flex",
+      alignItems: "center",
       px: 3,
       py: 1.5,
-      bgcolor: 'grey.100',
+      bgcolor: "grey.100",
       borderRadius: 3,
       minWidth: 140,
     }}
@@ -25,10 +25,10 @@ export const DateField: React.FC<DateFieldProps> = ({ label, value, setValue , .
       <Typography
         sx={{
           fontSize: 10,
-          fontWeight: 'bold',
-          color: 'grey.500',
+          fontWeight: "bold",
+          color: "grey.500",
           letterSpacing: 1,
-          textTransform: 'uppercase',
+          textTransform: "uppercase",
         }}
       >
         {label}
@@ -38,9 +38,12 @@ export const DateField: React.FC<DateFieldProps> = ({ label, value, setValue , .
         type="date"
         variant="standard"
         value={value}
-        role='textbox'
+        role="textbox"
         onChange={(e) => setValue(e.target.value)}
-        InputProps={{ disableUnderline: true, sx: { fontSize: '0.875rem', fontWeight: 600, p: 0 } }}
+        InputProps={{
+          disableUnderline: true,
+          sx: { fontSize: "0.875rem", fontWeight: 600, p: 0 },
+        }}
       />
     </Box>
   </Box>

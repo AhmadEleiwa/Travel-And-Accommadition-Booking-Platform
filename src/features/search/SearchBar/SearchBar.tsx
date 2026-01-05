@@ -10,10 +10,10 @@ export const SearchBar: React.FC<SearchBarProps> = ({ initialQuery = "" }) => {
   const navigate = useNavigate();
   const [query, setQuery] = useState(initialQuery);
   const [checkIn, setCheckIn] = useState(
-    new Date().toISOString().split("T")[0]
+    new Date().toISOString().split("T")[0],
   );
   const [checkOut, setCheckOut] = useState(
-    new Date(Date.now() + 86400000).toISOString().split("T")[0]
+    new Date(Date.now() + 86400000).toISOString().split("T")[0],
   );
   const [guests, setGuests] = useState<GuestType>({
     adults: 2,
@@ -56,8 +56,18 @@ export const SearchBar: React.FC<SearchBarProps> = ({ initialQuery = "" }) => {
     >
       <LocationField query={query} setQuery={setQuery} />
       <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-        <DateField  data-testid='check-in' label="Check In" value={checkIn} setValue={setCheckIn} />
-        <DateField data-testid='check-out' label="Check Out" value={checkOut} setValue={setCheckOut} />
+        <DateField
+          data-testid="check-in"
+          label="Check In"
+          value={checkIn}
+          setValue={setCheckIn}
+        />
+        <DateField
+          data-testid="check-out"
+          label="Check Out"
+          value={checkOut}
+          setValue={setCheckOut}
+        />
         <GuestPicker guests={guests} setGuests={setGuests} />
       </Stack>
       <SearchButton />

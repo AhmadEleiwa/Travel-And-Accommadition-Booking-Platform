@@ -16,7 +16,7 @@ const meta = {
   decorators: [
     (Story) => (
       <BrowserRouter>
-        <Container sx={{width:'100%', margin:'10px'}}>
+        <Container sx={{ width: "100%", margin: "10px" }}>
           <Story />
         </Container>
       </BrowserRouter>

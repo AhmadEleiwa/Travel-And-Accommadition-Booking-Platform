@@ -135,4 +135,4 @@ const List: React.FC<ListProps> = ({ hotel }) => {
   );
 };
 
-export default List
+export default List;

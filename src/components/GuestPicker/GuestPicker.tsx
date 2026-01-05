@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Users } from "lucide-react";
 import { Box, Button, Stack, Typography, Menu } from "@mui/material";
 import type { GuestPickerProps, GuestType } from "./GuestPicker.type";
-import {DealButton} from "../Buttons";
+import { DealButton } from "../Buttons";
 
-export const GuestPicker: React.FC<GuestPickerProps> = ({ guests, setGuests }) => {
+export const GuestPicker: React.FC<GuestPickerProps> = ({
+  guests,
+  setGuests,
+}) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleOpen = (e: React.MouseEvent<HTMLButtonElement>) =>
@@ -104,11 +107,7 @@ export const GuestPicker: React.FC<GuestPickerProps> = ({ guests, setGuests }) =
             </Stack>
           </Box>
         ))}
-        <DealButton
-          fullWidth
-          onClick={handleClose}
-
-        >
+        <DealButton fullWidth onClick={handleClose}>
           Done
         </DealButton>
       </Menu>

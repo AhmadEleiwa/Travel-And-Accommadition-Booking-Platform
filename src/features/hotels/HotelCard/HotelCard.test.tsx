@@ -42,36 +42,36 @@ describe("features/hotels/HotelCard", () => {
   describe("Variants Rendering", () => {
     it("check default variant", () => {
       render(<HotelCard hotel={MOCK_HOTELS[0]} />);
-      const compactElement = getters.compactCard()
+      const compactElement = getters.compactCard();
       expect(compactElement).toBeInTheDocument();
     });
     it("renders compact variant when variant='compact'", () => {
       render(<HotelCard hotel={MOCK_HOTELS[0]} variant="compact" />);
-      const compactElement = getters.compactCard()
+      const compactElement = getters.compactCard();
       expect(compactElement).toBeInTheDocument();
     });
     it("renders compact variant when variant='featured'", () => {
       render(<HotelCard hotel={MOCK_HOTELS[0]} variant="featured" />);
-      const featuredElement = getters.featuredCard()
+      const featuredElement = getters.featuredCard();
       expect(featuredElement).toBeInTheDocument();
     });
     it("renders compact variant when variant='list'", () => {
       render(<HotelCard hotel={MOCK_HOTELS[0]} variant="list" />);
-      const listElement = getters.listCard()
+      const listElement = getters.listCard();
       expect(listElement).toBeInTheDocument();
     });
   });
   describe("Conditional Rendering", () => {
     it("renders compact variant when variant='featured' and showSaleBadge=false ", () => {
       render(<HotelCard hotel={MOCK_HOTELS[0]} variant="featured" />);
-      const compactElement = getters.saleBadge()
+      const compactElement = getters.saleBadge();
       expect(compactElement).not.toBeInTheDocument();
     });
     it("renders compact variant when variant='featured' and showSaleBadge=true ", () => {
       render(
-        <HotelCard hotel={MOCK_HOTELS[0]} showSaleBadge variant="featured" />
+        <HotelCard hotel={MOCK_HOTELS[0]} showSaleBadge variant="featured" />,
       );
-      const compactElement = getters.saleBadge()
+      const compactElement = getters.saleBadge();
       expect(compactElement).toBeInTheDocument();
     });
   });
@@ -87,7 +87,7 @@ describe("features/hotels/HotelCard", () => {
         <Routes>
           <Route path="/" element={<HotelCard hotel={MOCK_HOTELS[0]} />} />
           <Route path="/hotel/:id" element={<h1>Hotel Details</h1>} />
-        </Routes>
+        </Routes>,
       );
       const link = screen.getByTestId("hotel--compact-ui");
       await userEvent.click(link);
