@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {  screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 
@@ -56,10 +56,7 @@ describe("components/SignupForm", () => {
       await userEvent.type(getters.usernameInput(), "johndoe");
       await userEvent.type(getters.emailInput(), "john@example.com");
       await userEvent.type(getters.passwordInput(), "password123");
-      await userEvent.type(
-        getters.confirmPasswordInput(),
-        "password123"
-      );
+      await userEvent.type(getters.confirmPasswordInput(), "password123");
 
       await userEvent.click(getters.submitButton());
 
@@ -78,7 +75,9 @@ describe("components/SignupForm", () => {
 
       await userEvent.click(getters.submitButton());
 
-      expect(await screen.findByText(/passwords must match/i)).toBeInTheDocument();
+      expect(
+        await screen.findByText(/passwords must match/i)
+      ).toBeInTheDocument();
     });
   });
 });

@@ -107,13 +107,8 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
               placeholder="••••••••"
               value={values.confirmPassword}
               onChange={handleChange}
-              error={
-                touched.confirmPassword &&
-                Boolean(errors.confirmPassword)
-              }
-              helperText={
-                touched.confirmPassword && errors.confirmPassword
-              }
+              error={touched.confirmPassword && Boolean(errors.confirmPassword)}
+              helperText={touched.confirmPassword && errors.confirmPassword}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
