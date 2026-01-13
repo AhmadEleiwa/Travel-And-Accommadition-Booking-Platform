@@ -6,3 +6,7 @@ export const setAccessToken = (token: string) => {
 };
 
 export const getAccessToken = () => accessToken;
+
+// login cerdinats
+// return accessToken
+// store in cookies

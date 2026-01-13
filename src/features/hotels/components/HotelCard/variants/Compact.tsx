@@ -12,7 +12,7 @@ const Compact: React.FC<CompactProps> = ({ hotel }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: 320,
+        minWidth: 320,
         bgcolor: "common.white",
         borderRadius: "24px",
         border: "1px solid #e2e8f0",

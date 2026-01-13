@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react"; // Change this
 import { BrowserRouter } from "react-router-dom";
 import HotelCard from ".";
-import { MOCK_HOTELS } from "../../../constants";
-import type { Hotel } from "..";
+import { MOCK_HOTELS } from "../../../../constants";
+import type { Hotel } from "../../";
 import { Container } from "@mui/material";
 
 const meta = {
