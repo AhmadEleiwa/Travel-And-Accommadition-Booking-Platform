@@ -1,5 +1,5 @@
 import type { Hotel } from "../../hotel.types";
 
-export interface FeturedDealsProps{
+export interface FeaturedDealsProps{
     featured:Hotel[]
 }

@@ -3,9 +3,9 @@ import { Box, Typography, Grid, Link } from "@mui/material";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { Link as RouterLink } from "react-router-dom";
 import HotelCard from "../HotelCard";
-import type { FeturedDealsProps } from "./FeaturedDeals.type";
+import type { FeaturedDealsProps } from "./FeaturedDeals.type";
 
-const FeaturedDeals: React.FC<FeturedDealsProps> = ({ featured }) => {
+const FeaturedDeals: React.FC<FeaturedDealsProps> = ({ featured }) => {
   return (
     <Box
       component="section"
