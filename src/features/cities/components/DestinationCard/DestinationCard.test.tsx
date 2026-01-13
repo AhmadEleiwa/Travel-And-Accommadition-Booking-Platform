@@ -10,7 +10,7 @@ import { render } from "../../../../test/render";
 import { MOCK_CITIES } from "../../../../constants";
 
 // ---------------- Mock Data ----------------
-const MOCK_CITY = MOCK_CITIES[0]
+const MOCK_CITY = MOCK_CITIES[0];
 
 // ---------------- Getters ----------------
 const getters = {
@@ -64,13 +64,10 @@ describe("components/DestinationCard", () => {
           <Route
             path="/"
             element={
-              <DestinationCard
-                city={MOCK_CITY}
-                linkTo="/destinations/paris"
-              />
+              <DestinationCard city={MOCK_CITY} linkTo="/destinations/paris" />
             }
           />
-        </Routes>
+        </Routes>,
       );
 
       const link = getters.link();
@@ -86,23 +83,18 @@ describe("components/DestinationCard", () => {
           <Route
             path="/"
             element={
-              <DestinationCard
-                city={MOCK_CITY}
-                linkTo="/destinations/paris"
-              />
+              <DestinationCard city={MOCK_CITY} linkTo="/destinations/paris" />
             }
           />
           <Route
             path="/destinations/paris"
             element={<h1>Paris Destination Page</h1>}
           />
-        </Routes>
+        </Routes>,
       );
 
       await userEvent.click(getters.link());
-      expect(
-        screen.getByText("Paris Destination Page")
-      ).toBeInTheDocument();
+      expect(screen.getByText("Paris Destination Page")).toBeInTheDocument();
     });
   });
 });

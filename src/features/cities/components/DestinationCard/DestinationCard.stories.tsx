@@ -23,9 +23,8 @@ const meta = {
   ],
   args: {
     city: MOCK_CITIES[0],
-    linkTo:`/search?q=${MOCK_CITIES[0].name}`
+    linkTo: `/search?q=${MOCK_CITIES[0].name}`,
   },
-
 } satisfies Meta<any>;
 
 export default meta;

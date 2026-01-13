@@ -4,7 +4,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { AppRouter } from "./routes/router";
 import type { User } from "./features/auth";
-import {useState } from "react";
+import { useState } from "react";
 // import SearchBar from "./features/search/SearchBar";
 // import { requestLogin } from "./features/auth/authAPI";
 import { SnackbarProvider } from "./features/snackbar/SnackbarProvider.tsx";

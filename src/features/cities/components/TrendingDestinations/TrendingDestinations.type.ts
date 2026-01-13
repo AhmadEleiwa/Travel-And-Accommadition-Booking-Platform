@@ -1,5 +1,5 @@
 import type { City } from "../../city.types";
 
-export interface TrendingDestinationProps  {
+export interface TrendingDestinationProps {
   trending: City[];
-};
+}

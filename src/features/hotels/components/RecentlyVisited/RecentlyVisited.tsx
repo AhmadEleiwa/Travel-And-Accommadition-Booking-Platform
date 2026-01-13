@@ -55,10 +55,7 @@ export const RecentlyVisited: React.FC<RecentlyVisitedProps> = ({ recent }) => {
           }}
         >
           {recent.map((hotel) => (
-            <Box
-              key={hotel.id}
-   
-            >
+            <Box key={hotel.id}>
               <HotelCard hotel={hotel} variant="compact" />
             </Box>
           ))}

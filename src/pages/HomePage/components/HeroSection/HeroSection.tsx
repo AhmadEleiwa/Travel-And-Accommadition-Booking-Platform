@@ -8,7 +8,7 @@ export const HeroSection: React.FC = () => {
       component="section"
       sx={{
         position: "relative",
-        minHeight: {xs:800, sm:600},
+        minHeight: { xs: 800, sm: 600 },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -83,5 +83,3 @@ export const HeroSection: React.FC = () => {
     </Box>
   );
 };
-
-

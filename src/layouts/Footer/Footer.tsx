@@ -9,7 +9,7 @@ export const Footer = () => {
         color: "grey.400",
         py: 12,
         textAlign: "center",
-        marginTop:5
+        marginTop: 5,
       }}
     >
       <Box
@@ -21,7 +21,12 @@ export const Footer = () => {
       >
         {/* Brand */}
         <Typography
-          sx={{ color: "common.white", fontWeight: 700, fontSize: "1.25rem", mb: 2 }}
+          sx={{
+            color: "common.white",
+            fontWeight: 700,
+            fontSize: "1.25rem",
+            mb: 2,
+          }}
         >
           Roam & Rest
         </Typography>
@@ -72,4 +77,3 @@ export const Footer = () => {
     </Box>
   );
 };
-

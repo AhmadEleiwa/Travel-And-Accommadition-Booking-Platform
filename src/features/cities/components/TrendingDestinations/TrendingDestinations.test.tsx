@@ -58,7 +58,7 @@ describe("components/TrendingDestinations", () => {
             element={<TrendingDestinations trending={MOCK_TRENDING} />}
           />
           <Route path="/search" element={<h1>Search Page</h1>} />
-        </Routes>
+        </Routes>,
       );
 
       await userEvent.click(getters.cards()[0]);

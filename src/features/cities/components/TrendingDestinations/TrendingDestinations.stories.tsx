@@ -23,9 +23,7 @@ const meta = {
   ],
   args: {
     trending: MOCK_CITIES,
-
   },
-
 } satisfies Meta<any>;
 
 export default meta;

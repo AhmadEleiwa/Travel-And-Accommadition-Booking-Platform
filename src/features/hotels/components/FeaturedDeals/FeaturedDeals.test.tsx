@@ -9,14 +9,13 @@ import FeaturedDeals from "./FeaturedDeals";
 import { render } from "../../../../test/render";
 import { MOCK_HOTELS } from "../../../../constants";
 
-
-
 // Getters
 const getters = {
   header: () => screen.getByText("Featured Deals"),
-  description: () => screen.getByText("Limited time offers in world-class accommodations."),
+  description: () =>
+    screen.getByText("Limited time offers in world-class accommodations."),
   viewAllLink: () => screen.getByText("View All Deals"),
-  hotelCards:  () => screen.getAllByTestId("hotel--featured-ui"), 
+  hotelCards: () => screen.getAllByTestId("hotel--featured-ui"),
   // Make sure HotelCard has data-testid="hotel-card"
 };
 
@@ -57,7 +56,7 @@ describe("components/FeaturedDeals", () => {
         <Routes>
           <Route path="/" element={<FeaturedDeals featured={MOCK_HOTELS} />} />
           <Route path="/search" element={<h1>Search Page</h1>} />
-        </Routes>
+        </Routes>,
       );
 
       await userEvent.click(getters.viewAllLink());

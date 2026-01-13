@@ -24,7 +24,6 @@ const meta = {
   args: {
     featured: MOCK_HOTELS,
   },
-
 } satisfies Meta<any>;
 
 export default meta;

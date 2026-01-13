@@ -16,8 +16,8 @@ describe("components/Footer", () => {
     expect(screen.getByText("Roam & Rest")).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Experience the world's most luxurious stays with our curated selection of premium accommodations."
-      )
+        "Experience the world's most luxurious stays with our curated selection of premium accommodations.",
+      ),
     ).toBeInTheDocument();
   });
 
@@ -34,7 +34,7 @@ describe("components/Footer", () => {
     render(<Footer />);
 
     expect(
-      screen.getByText("© 2024 Roam & Rest Platform. All rights reserved.")
+      screen.getByText("© 2024 Roam & Rest Platform. All rights reserved."),
     ).toBeInTheDocument();
   });
 });

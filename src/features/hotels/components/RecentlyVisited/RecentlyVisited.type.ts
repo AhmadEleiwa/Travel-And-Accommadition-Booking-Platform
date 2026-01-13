@@ -1,5 +1,5 @@
 import type { Hotel } from "../../hotel.types";
 
-export interface RecentlyVisitedProps{
-    recent:Hotel[]
+export interface RecentlyVisitedProps {
+  recent: Hotel[];
 }

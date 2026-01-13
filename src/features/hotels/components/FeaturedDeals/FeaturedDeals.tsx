@@ -10,7 +10,7 @@ const FeaturedDeals: React.FC<FeaturedDealsProps> = ({ featured }) => {
     <Box
       component="section"
       sx={{
-        maxWidth: "1280px", // max-w-7xl    
+        maxWidth: "1280px", // max-w-7xl
         mx: "auto",
         px: { xs: 2, sm: 3, lg: 4 },
         mt: 12,
@@ -68,8 +68,13 @@ const FeaturedDeals: React.FC<FeaturedDealsProps> = ({ featured }) => {
       {/* Cards Grid */}
       <Grid container spacing={4}>
         {featured.map((hotel) => (
-          <Grid justifyContent={'center'} alignItems={'center'} size={{xs:12,md:6,lg:4 }}  key={hotel.id}>
-            <HotelCard  hotel={hotel} variant="featured" />
+          <Grid
+            justifyContent={"center"}
+            alignItems={"center"}
+            size={{ xs: 12, md: 6, lg: 4 }}
+            key={hotel.id}
+          >
+            <HotelCard hotel={hotel} variant="featured" />
           </Grid>
         ))}
       </Grid>
