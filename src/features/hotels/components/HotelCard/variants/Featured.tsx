@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { MapPin, Star } from "lucide-react";
 
-import { DealButton } from "../../../../components/Buttons";
+import { DealButton } from "../../../../../components/Buttons";
 type FeaturedProps = Pick<HotelCardProps, "hotel" | "showSaleBadge">;
 const Featured: React.FC<FeaturedProps> = ({ hotel, showSaleBadge }) => {
   return (
@@ -14,7 +14,7 @@ const Featured: React.FC<FeaturedProps> = ({ hotel, showSaleBadge }) => {
       data-testid="hotel--featured-ui"
       sx={{
         display: "block",
-        width: 320,
+        minWidth: 320,
         bgcolor: "common.white",
         borderRadius: "24px",
         border: "1px solid #f1f5f9",

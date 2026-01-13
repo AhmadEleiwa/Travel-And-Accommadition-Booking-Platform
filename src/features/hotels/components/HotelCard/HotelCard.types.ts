@@ -1,4 +1,4 @@
-import type { Hotel } from "..";
+import type { Hotel } from "../../";
 
 export type HotelCardVariant = "compact" | "featured" | "list";
 
