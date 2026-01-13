@@ -3,12 +3,12 @@
 // import { MOCK_HOTELS } from './constants';
 import { BrowserRouter } from "react-router-dom";
 import { AppRouter } from "./routes/router";
-import Navbar from "./layouts/Navbar/Navbar";
 import type { User } from "./features/auth";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 // import SearchBar from "./features/search/SearchBar";
 // import { requestLogin } from "./features/auth/authAPI";
 import { SnackbarProvider } from "./features/snackbar/SnackbarProvider.tsx";
+import { MainLayout } from "./layouts/Layout.tsx";
 
 export default function App() {
   const [mockUser, setMockUser] = useState<User | null>({
@@ -22,15 +22,15 @@ export default function App() {
     // <h1>sdsd</h1>
     <BrowserRouter>
       <SnackbarProvider />
-
-      <Navbar
+      <MainLayout
         user={mockUser}
         onLogout={() => {
           setMockUser(null);
         }}
-      />
+      >
+        <AppRouter />
+      </MainLayout>
       {/* <SearchBar initialQuery="Japan" /> */}
-      <AppRouter />
     </BrowserRouter>
   );
 }
