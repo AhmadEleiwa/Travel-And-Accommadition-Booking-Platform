@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import SearchBar from "../../../../features/search/SearchBar";
+import SearchBar from "../../../../features/search/components/SearchBar";
 import type React from "react";
 
 export const HeroSection: React.FC = () => {
