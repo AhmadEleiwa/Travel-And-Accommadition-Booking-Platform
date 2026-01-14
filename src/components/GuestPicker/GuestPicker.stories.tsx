@@ -33,7 +33,7 @@ const meta = {
     guests: MOCK_GUEST,
     setGuests: (g: GuestType) => {
       console.log(
-        `guest{adults:${g.adults}, children:${g.children}, rooms:${g.rooms}}`
+        `guest{adults:${g.adults}, children:${g.children}, rooms:${g.rooms}}`,
       );
     },
   },

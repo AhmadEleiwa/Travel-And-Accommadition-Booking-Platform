@@ -1,1 +1,1 @@
-export * from './city.types'
+export * from "./city.types";

@@ -74,7 +74,7 @@ describe("components/Navbar", () => {
 
       expect(getters.userInfo()).toBeInTheDocument();
       expect(
-        screen.queryByTestId("navbar-logout-button")
+        screen.queryByTestId("navbar-logout-button"),
       ).not.toBeInTheDocument();
     });
 
@@ -97,7 +97,7 @@ describe("components/Navbar", () => {
         <Routes>
           <Route path="/" element={<Navbar user={null} onLogout={vi.fn()} />} />
           <Route path="/login" element={<h1>Login Page</h1>} />
-        </Routes>
+        </Routes>,
       );
 
       await userEvent.click(getters.signInButton());

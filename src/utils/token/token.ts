@@ -1,0 +1,12 @@
+// token.ts
+let accessToken: string | null = null;
+
+export const setAccessToken = (token: string) => {
+  accessToken = token;
+};
+
+export const getAccessToken = () => accessToken;
+
+// login cerdinats
+// return accessToken
+// store in cookies

@@ -1,2 +1,2 @@
 import HotelDetailPage from "./HotelDetailPage";
-export default HotelDetailPage
+export default HotelDetailPage;

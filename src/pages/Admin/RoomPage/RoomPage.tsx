@@ -1,5 +1,4 @@
-const RoomPage = () =>{
-    return <main>
-    </main>
-}
-export default RoomPage
+const RoomPage = () => {
+  return <main></main>;
+};
+export default RoomPage;

@@ -1,6 +1,4 @@
 const HotelsPage = () => {
-  return <main>
-    Hotels Page
-  </main>;
+  return <main>Hotels Page</main>;
 };
 export default HotelsPage;

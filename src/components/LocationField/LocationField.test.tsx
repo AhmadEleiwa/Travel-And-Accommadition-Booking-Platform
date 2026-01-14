@@ -35,7 +35,7 @@ describe("components/LocationField", () => {
       const input = getters.input();
       expect(input).toHaveAttribute(
         "placeholder",
-        "Search for hotels, cities..."
+        "Search for hotels, cities...",
       );
     });
   });

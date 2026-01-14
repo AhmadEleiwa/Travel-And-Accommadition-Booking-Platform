@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import {DealButton} from "./DealButton";
+import { DealButton } from "./DealButton";
 import { Box, Container, type ButtonProps } from "@mui/material";
 
 const meta = {
@@ -12,7 +12,13 @@ const meta = {
   decorators: [
     (Story) => (
       <Container sx={{ width: "100%" }}>
-        <Box display={'flex'} width={'100%'} height={'100%'} justifyContent={"center"} alignItems={"center"}>
+        <Box
+          display={"flex"}
+          width={"100%"}
+          height={"100%"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
           <Story />
         </Box>
       </Container>

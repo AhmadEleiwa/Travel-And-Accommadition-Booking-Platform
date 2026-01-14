@@ -1,2 +1,2 @@
 import SearchPage from "./SearchResultPage";
-export default SearchPage
+export default SearchPage;

@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
-import {screen } from "@testing-library/react";
-import {render} from '../../test/render'
+import { screen } from "@testing-library/react";
+import { render } from "../../test/render";
 import { DateField } from "./DateField";
 import type { DateFieldProps } from "./DateField.type";
 
@@ -45,7 +45,7 @@ describe("components/DateField", () => {
           value={defaultProps.value}
           setValue={defaultProps.setValue}
           label=""
-        />
+        />,
       );
       expect(screen.queryByText(defaultProps.label)).not.toBeInTheDocument();
     });

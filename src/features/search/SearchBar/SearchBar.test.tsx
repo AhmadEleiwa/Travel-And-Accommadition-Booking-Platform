@@ -44,7 +44,7 @@ describe("components/SearchBar", () => {
         <Routes>
           <Route index path="/" element={<SearchBar {...defaultProps} />} />
           <Route path="search" element={<h1>Search Page</h1>} />
-        </Routes>
+        </Routes>,
       );
       getters.searchButton();
       await user.click(getters.searchButton());

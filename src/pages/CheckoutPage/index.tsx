@@ -1,2 +1,2 @@
 import CheckoutPage from "./CheckoutPage";
-export default CheckoutPage
+export default CheckoutPage;

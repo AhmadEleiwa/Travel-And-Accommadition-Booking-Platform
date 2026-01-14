@@ -1,3 +1,3 @@
 import Navbar from "./Navbar";
-export default Navbar
-export * from './Navbar.type'
+export default Navbar;
+export * from "./Navbar.type";

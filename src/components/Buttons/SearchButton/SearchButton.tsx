@@ -22,6 +22,6 @@ export const SearchButton: React.FC<ButtonProps> = ({ ...props }) => (
     }}
   >
     <Search size={20} />
-    {props.children ?? 'Search'}
+    {props.children ?? "Search"}
   </Button>
 );

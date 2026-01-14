@@ -1,6 +1,4 @@
-const SearchPage = () =>{
-    return <main>
-        SearchPage
-    </main>
-}
+const SearchPage = () => {
+  return <main>SearchPage</main>;
+};
 export default SearchPage;

@@ -1,8 +1,8 @@
 export interface SearchParams {
-  query: string
-  checkIn: string
-  checkOut: string
-  adults: number
-  children: number
-  rooms: number
+  query: string;
+  checkIn: string;
+  checkOut: string;
+  adults: number;
+  children: number;
+  rooms: number;
 }
