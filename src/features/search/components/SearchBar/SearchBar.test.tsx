@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";
 
 import "@testing-library/jest-dom";
-import { render } from "../../../test/render";
+import { render } from "../../../../test/render";
 import { SearchBar } from "./SearchBar";
 import { type SearchBarProps } from "./SearchBar.type";
 import { Route, Routes } from "react-router-dom";
