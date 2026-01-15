@@ -1,7 +1,9 @@
 import type { RouteObject } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import HotelDetailPage from "../pages/HotelDetailPage";
-import SearchResultPage from "../pages/SearchResultPage";
+import { SearchPage } from "@/features/search/pages/SearchPage/SearchPage";
+// import SearchResultPage from "../pages/SearchResultPage";
+// import SearchPage from "../pages/SearchResultPage";
 
 export const PublicRoutes: RouteObject[] = [
   {
@@ -10,7 +12,7 @@ export const PublicRoutes: RouteObject[] = [
   },
   {
     path: "/search",
-    element: <SearchResultPage />,
+    element: <SearchPage />,
   },
   {
     path: "/hotel/:id",
