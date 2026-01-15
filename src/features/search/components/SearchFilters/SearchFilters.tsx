@@ -10,14 +10,18 @@ import {
 } from "@mui/material";
 import type { SearchFilterProps } from "./SearchFilters.types";
 
-
-
-export const SearchFilters:React.FC<SearchFilterProps> = ({ filters, onChange }) => {
+export const SearchFilters: React.FC<SearchFilterProps> = ({
+  filters,
+  onChange,
+}) => {
   return (
-    <Paper sx={{ width: 280, height:400, p: 3 , borderRadius:4}}>
+    <Paper sx={{ width: 280, height: 400, p: 3, borderRadius: 4 }}>
       <Box display="flex" justifyContent="space-between" mb={2}>
         <Typography fontWeight={700}>Filters</Typography>
-        <Button size="small" onClick={() => onChange({ priceMax: 2000, stars: 0 })}>
+        <Button
+          size="small"
+          onClick={() => onChange({ priceMax: 2000, stars: 0 })}
+        >
           Reset
         </Button>
       </Box>
@@ -38,9 +42,11 @@ export const SearchFilters:React.FC<SearchFilterProps> = ({ filters, onChange })
       </Typography>
       <RadioGroup
         value={filters.stars}
-        onChange={(e) => onChange({ ...filters, stars: Number(e.target.value) })}
+        onChange={(e) =>
+          onChange({ ...filters, stars: Number(e.target.value) })
+        }
       >
-        {[0, 5, 4, 3].map(s => (
+        {[0, 5, 4, 3].map((s) => (
           <FormControlLabel
             key={s}
             value={s}

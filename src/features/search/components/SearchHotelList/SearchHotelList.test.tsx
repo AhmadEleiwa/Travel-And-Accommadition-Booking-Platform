@@ -7,14 +7,13 @@ import { SearchHotelList } from "./SearchHotelList";
 import type { SearchHotelListProps } from "./SearchHotelList.types";
 import { MOCK_HOTELS } from "@/constants";
 
-
-const mockHotels = MOCK_HOTELS.slice(0,2);
+const mockHotels = MOCK_HOTELS.slice(0, 2);
 const renderComponent = (props: Partial<SearchHotelListProps> = {}) =>
   render(
     <SearchHotelList
       hotels={props.hotels ?? []}
       loading={props.loading ?? false}
-    />
+    />,
   );
 
 describe("components/SearchHotelList", () => {
@@ -33,15 +32,15 @@ describe("components/SearchHotelList", () => {
       renderComponent({ hotels: [], loading: false });
 
       expect(
-        screen.getByText("No hotels match your criteria.")
+        screen.getByText("No hotels match your criteria."),
       ).toBeInTheDocument();
     });
   });
 
   describe("Hotels list", () => {
     it("renders a list of hotel cards", () => {
-    //   renderComponent({ hotels: mockHotels });
-        render(<SearchHotelList hotels={mockHotels} loading={false} />)
+      //   renderComponent({ hotels: mockHotels });
+      render(<SearchHotelList hotels={mockHotels} loading={false} />);
       const cards = screen.getAllByTestId("hotel--list-ui");
       // expect(cards).toBeInTheDocument()
       expect(cards).toHaveLength(2);

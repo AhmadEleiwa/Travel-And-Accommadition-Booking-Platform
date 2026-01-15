@@ -17,7 +17,7 @@ const meta = {
     (Story) => (
       <BrowserRouter>
         <Container sx={{ width: "100vw", margin: "10px" }}>
-        <Story />
+          <Story />
         </Container>
       </BrowserRouter>
     ),
@@ -35,7 +35,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
 export const Loading: Story = {
   args: {
-    hotels:MOCK_HOTELS,
+    hotels: MOCK_HOTELS,
     loading: true,
   },
 };

@@ -6,7 +6,7 @@ import { MOCK_HOTELS } from "@/constants";
 import type { Hotel } from "@/features/hotels";
 // import { type Hotel } from "@/features/hotels";
 export const searchHotels = async (
-  params: SearchQueryParams
+  params: SearchQueryParams,
 ): Promise<SearchResponse> => {
   // Simulate API delay
   await new Promise((res) => setTimeout(res, 300));
@@ -19,19 +19,19 @@ export const searchHotels = async (
     filtered = filtered.filter(
       (h) =>
         h.name.toLowerCase().includes(qLower) ||
-        h.location.toLowerCase().includes(qLower)
+        h.location.toLowerCase().includes(qLower),
     );
   }
 
   // Filter by price
   if (params.priceMin !== undefined) {
     filtered = filtered.filter(
-      (h) => (h.discountedPrice ?? h.basePrice) >= params.priceMin!
+      (h) => (h.discountedPrice ?? h.basePrice) >= params.priceMin!,
     );
   }
   if (params.priceMax !== undefined) {
     filtered = filtered.filter(
-      (h) => (h.discountedPrice ?? h.basePrice) <= params.priceMax!
+      (h) => (h.discountedPrice ?? h.basePrice) <= params.priceMax!,
     );
   }
 

@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Stack } from "@mui/material";
 import DateField from "../../../../components/DateField";
-import GuestPicker, { type GuestType } from "../../../../components/GuestPicker";
+import GuestPicker, {
+  type GuestType,
+} from "../../../../components/GuestPicker";
 import LocationField from "../../../../components/LocationField";
 import { SearchButton } from "../../../../components/Buttons";
 import type { SearchBarProps } from "./SearchBar.type";
