@@ -1,6 +1,6 @@
 import type { RouteObject } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-import HotelDetailPage from "../pages/HotelDetailPage";
+import {HotelDetailPage} from "../features/hotels/pages/HotelDetailPage/HotelDetailPage";
 import { SearchPage } from "@/features/search/pages/SearchPage/SearchPage";
 // import SearchResultPage from "../pages/SearchResultPage";
 // import SearchPage from "../pages/SearchResultPage";
