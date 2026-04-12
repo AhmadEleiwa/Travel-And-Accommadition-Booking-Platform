@@ -73,7 +73,7 @@ describe("features/rooms/RoomCard", () => {
             path="/"
             element={<RoomCard hotelId={MOCK_HOTEL_ID} room={MOCK_ROOM} />}
           />
-          <Route path="/checkout" element={<h1>Checkout Page</h1>} />
+          <Route path="/checkout/:hotelID/:roomID" element={<h1>Checkout Page</h1>} />
         </Routes>,
       );
 

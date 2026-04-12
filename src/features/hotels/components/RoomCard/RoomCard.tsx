@@ -100,7 +100,7 @@ export const RoomCard:React.FC<RoomCardProps> = ({ hotelId, room }) => {
             variant="contained"
             color="primary"
             startIcon={<ShoppingCart />}
-            onClick={() => navigate(`/checkout?hotel=${hotelId}&room=${room.id}`)}
+            onClick={() => navigate(`/checkout/${hotelId}/${room.id}`)}
             sx={{
               px: 4,
               py: 1.5,
