@@ -28,12 +28,17 @@ export const CheckoutPage = () => {
   const openConfiramtionModalHandler = () => {
     setIsConfirmationOpen(true);
   };
+
+  const confirmBooking = () =>{
+    alert("SS")
+    closeConfiramtionModalHandler()
+  }
   return (
     <Box sx={{ bgcolor: "#fff", minHeight: "100vh", py: 6 }}>
       {isConfirmationModalOpen && (
         <ConfirmationModal
           room={room}
-          onConfirm={() => alert("ss")}
+          onConfirm={confirmBooking}
           onClose={closeConfiramtionModalHandler}
         />
       )}
