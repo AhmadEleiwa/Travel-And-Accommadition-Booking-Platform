@@ -9,23 +9,20 @@ import { useState } from "react";
 // import { requestLogin } from "./features/auth/authAPI";
 import { SnackbarProvider } from "./features/snackbar/SnackbarProvider.tsx";
 import { MainLayout } from "./layouts/Layout.tsx";
+import { useAppDispatch, useAppSelector } from "./store/store.ts";
+import { logout } from "./features/auth/authSlice.ts";
 
 export default function App() {
-  const [mockUser, setMockUser] = useState<User | null>({
-    email: "ahmad@gmail.com",
-    role: "USER",
-    username: "ss",
-    id: "s",
-  });
+  const authState = useAppSelector(p => p.auth)
+  const dispatcher = useAppDispatch()
 
   return (
-    // <h1>sdsd</h1>
     <BrowserRouter>
       <SnackbarProvider />
       <MainLayout
-        user={mockUser}
+        user={authState.user}
         onLogout={() => {
-          setMockUser(null);
+        dispatcher(logout())
         }}
       >
         <AppRouter />
