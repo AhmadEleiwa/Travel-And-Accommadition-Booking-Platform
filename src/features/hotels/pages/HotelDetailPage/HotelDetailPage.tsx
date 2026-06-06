@@ -18,6 +18,7 @@ export const HotelDetailPage = () => {
   }
 
   return (
+    
     <Box sx={{ bgcolor: "#fff", minHeight: "100vh", py: 6 }}>
       <Box sx={{ maxWidth: "85%", margin: "auto" }}>
         <GallerySection
